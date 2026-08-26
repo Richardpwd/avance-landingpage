@@ -116,50 +116,37 @@ function Index() {
       {/* Hero com efeito Background Paths */}
       <BackgroundPaths className="bg-background pt-16">
         <div className="mx-auto max-w-4xl px-4 py-24 text-center sm:px-6">
-          <motion.img
+          <img
             src={logo.url}
             alt="Avance Apoio Escolar"
-            className="mx-auto mb-8 h-28 w-28 rounded-2xl object-cover shadow-2xl shadow-primary/20 sm:h-36 sm:w-36"
-            initial={{ opacity: 0, scale: 0.85 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="animate-hero-scale mx-auto mb-8 h-28 w-28 rounded-2xl object-cover shadow-2xl shadow-primary/20 sm:h-36 sm:w-36"
           />
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
-          >
+          <div className="animate-hero-fade" style={{ animationDelay: "0.15s" }}>
             <span className="inline-flex items-center gap-2 rounded-full border border-secondary/40 bg-secondary/10 px-4 py-1.5 text-sm font-semibold text-secondary">
               <Sparkles className="h-4 w-4" />
               Matrículas 2027 abertas
             </span>
-          </motion.div>
-          <motion.h1
-            className="mt-6 text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
+          </div>
+          <h1
+            className="animate-hero-fade mt-6 text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl"
+            style={{ animationDelay: "0.3s" }}
           >
             Acompanhamento escolar{" "}
             <span className="text-primary">multidisciplinar</span>
             <br />
             <span className="text-secondary">Seu filho merece este apoio!</span>
-          </motion.h1>
-          <motion.p
-            className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.45, ease: "easeOut" }}
+          </h1>
+          <p
+            className="animate-hero-fade mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl"
+            style={{ animationDelay: "0.45s" }}
           >
             Do Infantil ao 9º ano — reforço escolar e suporte emocional para que
             cada aluno recupere a confiança, organize sua rotina e avance com
             segurança e autonomia.
-          </motion.p>
-          <motion.div
-            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
+          </p>
+          <div
+            className="animate-hero-fade mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
+            style={{ animationDelay: "0.6s" }}
           >
             <Button variant="secondary" size="lg" asChild>
               <a href="#matriculas">
@@ -170,7 +157,7 @@ function Index() {
             <Button variant="outline" size="lg" asChild>
               <a href="#servicos">Conheça nossos serviços</a>
             </Button>
-          </motion.div>
+          </div>
         </div>
       </BackgroundPaths>
 
