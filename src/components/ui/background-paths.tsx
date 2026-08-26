@@ -3,7 +3,13 @@
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 
-function FloatingPaths({ position }: { position: number }) {
+function FloatingPaths({
+  position,
+  className,
+}: {
+  position: number;
+  className?: string;
+}) {
   const paths = Array.from({ length: 36 }, (_, i) => ({
     id: i,
     d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${
@@ -19,7 +25,7 @@ function FloatingPaths({ position }: { position: number }) {
   return (
     <div className="pointer-events-none absolute inset-0">
       <svg
-        className="h-full w-full text-secondary"
+        className={`h-full w-full ${className ?? "text-secondary"}`}
         viewBox="0 0 696 316"
         fill="none"
         aria-hidden="true"
@@ -62,8 +68,8 @@ export function BackgroundPaths({
       className={`relative flex min-h-screen w-full items-center justify-center overflow-hidden ${className ?? ""}`}
     >
       <div className="absolute inset-0">
-        <FloatingPaths position={1} />
-        <FloatingPaths position={-1} />
+        <FloatingPaths position={1} className="text-secondary" />
+        <FloatingPaths position={-1} className="text-primary" />
       </div>
       <div className="relative z-10 w-full">{children}</div>
     </div>
