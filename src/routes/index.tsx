@@ -11,9 +11,9 @@ import {
   Users,
   ShieldCheck,
 } from "lucide-react";
-import { BackgroundPaths } from "@/components/ui/background-paths";
-import { Button } from "@/components/ui/button";
 import logo from "@/assets/avance-logo.jpeg.asset.json";
+import fachada from "@/assets/avance-fachada.jpeg.asset.json";
+import criancas from "@/assets/avance-criancas.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
