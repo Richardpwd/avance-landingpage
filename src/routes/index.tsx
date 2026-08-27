@@ -105,8 +105,11 @@ function Index() {
               alt="Logo Avance Apoio Escolar"
               className="h-10 w-10 rounded-full object-cover"
             />
-            <span className="text-lg font-bold tracking-tight">
-              Avance <span className="text-secondary">Apoio Escolar</span>
+            <span className="text-base font-bold tracking-tight sm:text-lg">
+              Avance{" "}
+              <span className="hidden text-secondary sm:inline">
+                Apoio Escolar
+              </span>
             </span>
           </div>
           <Button variant="secondary" size="sm" asChild>
