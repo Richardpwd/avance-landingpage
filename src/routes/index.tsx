@@ -11,9 +11,11 @@ import {
   Users,
   ShieldCheck,
 } from "lucide-react";
+import logo from "@/assets/avance-logo.jpeg.asset.json";
+import fachada from "@/assets/avance-fachada.jpeg.asset.json";
+import criancas from "@/assets/avance-criancas.jpeg.asset.json";
 import { BackgroundPaths } from "@/components/ui/background-paths";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/avance-logo.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -193,6 +195,47 @@ function Index() {
                 </p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Nosso espaço */}
+      <section className="border-t border-border py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <motion.div {...fadeUp()} className="mx-auto max-w-3xl text-center">
+            <span className="text-sm font-bold uppercase tracking-widest text-secondary">
+              Nosso espaço
+            </span>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              Um ambiente acolhedor para aprender
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Estrutura pensada para o conforto e desenvolvimento dos alunos, com salas equipadas e equipe preparada.
+            </p>
+          </motion.div>
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <motion.div {...fadeUp(0.1)} className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg shadow-black/20">
+              <img
+                src={fachada.url}
+                alt="Fachada da Avance Apoio Escolar no bairro Venâncio, Crateús"
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <div className="p-4">
+                <p className="text-sm font-medium text-foreground">Fachada da Avance</p>
+                <p className="text-xs text-muted-foreground">Bairro Venâncio, Crateús — CE</p>
+              </div>
+            </motion.div>
+            <motion.div {...fadeUp(0.2)} className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg shadow-black/20">
+              <img
+                src={criancas.url}
+                alt="Crianças em atividade educativa na Avance Apoio Escolar"
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <div className="p-4">
+                <p className="text-sm font-medium text-foreground">Aprendizado na prática</p>
+                <p className="text-xs text-muted-foreground">Atividades lúdicas e reforço escolar</p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
