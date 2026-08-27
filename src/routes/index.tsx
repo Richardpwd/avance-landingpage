@@ -14,6 +14,8 @@ import {
 import logo from "@/assets/avance-logo.jpeg.asset.json";
 import fachada from "@/assets/avance-fachada.jpeg.asset.json";
 import criancas from "@/assets/avance-criancas.jpeg.asset.json";
+import { BackgroundPaths } from "@/components/ui/background-paths";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
   head: () => ({
