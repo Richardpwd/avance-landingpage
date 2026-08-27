@@ -284,7 +284,7 @@ function Index() {
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button variant="secondary" size="lg" asChild>
                 <a
-                  href="https://wa.me/558800000000?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20as%20matr%C3%ADculas%202027%20da%20Avance%20Apoio%20Escolar."
+                  href="https://wa.me/5588994862905?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20as%20matr%C3%ADculas%202027%20da%20Avance%20Apoio%20Escolar."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
