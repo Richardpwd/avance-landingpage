@@ -11,9 +11,9 @@ import {
   Users,
   ShieldCheck,
 } from "lucide-react";
-import logo from "@/assets/avance-logo.jpeg.asset.json";
-import fachada from "@/assets/avance-fachada.jpeg.asset.json";
-import criancas from "@/assets/avance-criancas.jpeg.asset.json";
+const logo = { url: "/avance-logo.jpeg" };
+const fachada = { url: "/avance-fachada.jpeg" };
+const criancas = { url: "/avance-criancas.jpeg" };
 import { BackgroundPaths } from "@/components/ui/background-paths";
 import { Button } from "@/components/ui/button";
 
