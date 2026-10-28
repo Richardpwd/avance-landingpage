@@ -173,3 +173,17 @@
 @utility animate-hero-scale {
   animation: hero-scale-in 0.7s ease-out both;
 }
+
+@keyframes bg-path-flow {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: -1; }
+}
+
+.bg-path {
+  stroke-dasharray: 0.6 0.4;
+  animation: bg-path-flow 20s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-path { animation: none; }
+}
